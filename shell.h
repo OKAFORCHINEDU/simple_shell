@@ -109,8 +109,7 @@ typedef struct passinfo
 	char **environ;
 	int env_changed;
 	int status;
-	char **cmd_buf; /* pointer to cmd ; chain buffer, for memory mangement */
-	int cmd_buf_type; /* CMD_type ||, &&, ; */
+	char **cmd_buf; /* pointer to cmd ; chain buffer, for memory mangement */  int cmd_buf_type; /* CMD_type ||, &&, ; */
 	int readfd;
 	int histcount;
 } info_t;
@@ -119,17 +118,16 @@ typedef struct passinfo
 #define INFO_INIT \
 
 {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
-
 		0, 0, 0}
 
-		/**
-		 * struct builtin - contains a builtin string and related function		
-		 * @type: the builtin command flag
-		 * @func: the function
-		 *
-		 */
+/**
+ * struct builtin - contains a builtin string and related function
+ * @type: the builtin command flag
+ * @func: the function
+ *
+ */
 
-		typedef struct builtin
+typedef struct builtin
 
 {
 	char *type;
