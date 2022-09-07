@@ -23,7 +23,7 @@ int interactive(info_t *info)
  * @delim: the delimeter string
  *
  * Return: 1 if true, 0 if false
- * 
+ *
  */
 
 int is_delim(char c, char *delim)
@@ -50,14 +50,13 @@ int _isalpha(int c)
 		return (1);
 	else
 		return (0);
-
 }
 
 
 /**
  * _atoi - converts a string to an integer
  * @s: the string to be converted
- * 
+ *
  * Return: 0 if no numbers in string, converted number otherwise
  *
  */
